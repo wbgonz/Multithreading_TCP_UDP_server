@@ -14,6 +14,12 @@ exitFlag = 0
 # this shows the program is running in parallel since  if it was running serially the
 # running time would take 20s to execute.
 
+
+#  The time class is used to time the thread execution
+# the threading class is used to create a myThread class using inherritance of Thread
+#  The __init__ method is overridden to suit our thread similarly the run method is overridden to account
+#  for our thread runnig behaviour of our thread
+
 class myThread(threading.Thread):
 
     def __init__(self, threadID, name, counter, delay):
