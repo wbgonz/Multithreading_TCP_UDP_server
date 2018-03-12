@@ -7,6 +7,12 @@ import time
 
 exitFlag = 0
 
+# The program executes in roughly 10 seconds.
+# This is consistent with the two threads that have a total delay of 10s
+# thread1 executes the while loop 10 times with a delay of 10 seconds
+# Thread2 executes it 5 times with a delay of 2s making it a total of 10s
+# this shows the program is running in parallel since  if it was running serially the
+# running time would take 20s to execute.
 
 class myThread(threading.Thread):
 
