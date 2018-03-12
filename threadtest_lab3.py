@@ -45,14 +45,21 @@ def print_time(threadName, counter, delay):
         print(threading.active_count())
         counter -= 1
 
+# the time taken is roughly 25s similarly as above this is consistent with the delays given
+
 
 # Create new threads
-thread1 = myThread(1, "Thread-1", 10, 1)
-thread2 = myThread(2, "Thread-2", 5, 2)
-
+thread1 = myThread(1, "Thread-1", 25, 1)
+thread2 = myThread(2, "Thread-2", 12, 2)
+thread3 = myThread(2, "Thread-3", 8, 3)
+thread4 = myThread(2, "Thread-4",  6, 4)
+thread5 = myThread(2, "Thread-5",  5, 5)
 
 # Start new Threads
 thread1.start()
 thread2.start()
+thread3.start()
+thread4.start()
+thread5.start()
 
 print("Exiting Main Thread")
